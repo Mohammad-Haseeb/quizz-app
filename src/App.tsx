@@ -1,24 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+import Selectbar from './Components/SelectBar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React App
-        </a>
-      </header>
+       <h4 className="quizQuote">Knowledge does not consist in narrating much. Knowledge is but a light which Allah places in the heart.</h4>
+       <div className='QuizzApp'><h1>Quiz App</h1></div>
+         <Selectbar/>
+        
+ 
+      
     </div>
   );
 }

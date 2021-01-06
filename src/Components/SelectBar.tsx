@@ -6,7 +6,7 @@ export default function Selectbar() {
      let [quizzlevel, setquizzlevel] = useState("");
          
      let quizLevelSelectionftn=(e:React.ChangeEvent<{value:string}>)=>{
-            console.log(e.target.value); 
+            setquizzlevel(e.target.value); 
      }
   return (
     <>
@@ -29,7 +29,7 @@ export default function Selectbar() {
   
   </div>
   <div style={{display:"flex",justifyContent:"center"}}>
-  <button type="button" className="btn tryQuizzBtn">Try Quizz</button>
+  <button type="button" onClick={()=>{console.log(quizzlevel)}} className="btn tryQuizzBtn">Try Quizz</button>
   </div>
   </>
   );

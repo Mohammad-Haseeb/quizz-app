@@ -21,4 +21,23 @@
     line-height: 16px !important;
     color: white !important;
     
+
 }
+.App{
+    background-image: linear-gradient(78.33deg, #034770 5.81%, #0F74B0 86.83%);
+    width: 100%;
+    height: 100vh;
+  }
+  .quizQuote{
+    color: aliceblue;
+    text-align: center;
+    padding-top: 10%;
+    font-family: Roboto,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+  }
+  .QuizzApp{
+    color: white;
+    padding-top: 5%;
+    text-align: center;
+  
+    font-family: SOurce sans Pro;
+  }

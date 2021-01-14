@@ -1,0 +1,50 @@
+.MainQuizzContainer{
+background-image: linear-gradient(78.33deg, #034770 5.81%, #0F74B0 86.83%);
+width: 100%;
+height: 100vh;
+}
+.quizzScore{
+    text-align: center;
+    font-weight: bolder;
+    color: aliceblue;
+    font-style: italic;
+}
+.MainquestionContainer{
+   
+    display: flex;
+    justify-content: center;
+}
+
+.QuestionBox{
+      
+    padding: 10px;
+      border-radius: 30px;
+      margin-top: 40px;
+      
+      border-radius: 40px;
+background: #f0f0f0;
+box-shadow:  21px 21px 42px #a3a3a3,
+             -21px -21px 42px #ffffff;
+}
+.questionText{
+    color:ble;
+    font-family: Source Sans Pro;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+.radioDisplay{
+    margin-top: 10%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+   
+   justify-content: space-around;
+
+}
+
+@media screen and (min-width: 901px) {
+    .QuestionBox{
+       width: 60%;
+    }
+  }

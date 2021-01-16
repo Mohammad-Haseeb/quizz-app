@@ -13,7 +13,7 @@ export default function Quizzform() {
   let validate=()=>{
     if(selectedValue===dataContextPack[arrayIncrement[0]].answer){
       setquizzScoreState(++quizzScoreState);
-      console.log("Score : " ,selectedValue===dataContextPack[arrayIncrement[0]].answer);
+     
       quizzScoreSetter(quizzScoreState);
       
     }
@@ -21,7 +21,7 @@ export default function Quizzform() {
       setquizzScoreState(quizzScoreState);
       quizzScoreSetter(quizzScoreState);
     }
-    console.log("Score : " ,selectedValue);
+   
     setquestionIncrement(++questionIncrement);
                            arrayIncrement[1](++arrayIncrement[0]);
   }
@@ -31,7 +31,7 @@ export default function Quizzform() {
   
     let quizzScoreSetter=useContext(quizzScoreContext);
     let [quizzScoreState, setquizzScoreState] = useState<number>(0);
-      console.log("Result", dataContextPack);
+     
           let arrayIncrement=useState(0)
       let handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedValue(event.target.value);
@@ -39,7 +39,7 @@ export default function Quizzform() {
 
       
   };
-    console.log("DataPack  : " ,typeof dataContextPack)
+    
   if(questionIncrement<10 && dataContextPack!==undefined){   
   return (
         
